@@ -1,0 +1,94 @@
+#feedbackModule .feedback {
+    font: 12px normal Verdana, Arial, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 0;
+    right: 105px;
+    z-index: 9999;
+    border-top: none;
+    border-radius: 4px 4px 0px 0px;
+    background-color: #2170cd !important;
+	background: -webkit-linear-gradient(top, #358eea 0%,#2170cd 100%) !important;
+    display: block;
+    color: #333;
+}
+
+#feedbackModule .feedback ul li a:hover {
+    background-color: rgba(128,128,128,0.2) !important;
+    border-radius: 4px 4px 0px 0px;
+    border: solid 2px #2170cd;
+}
+
+#feedbackModule .feedback ul li a:focus {
+    border: solid 2px #D00000 !important;
+}
+
+#feedbackModule .feedback ul li a {
+    padding: 7px 7px 7px 7px;
+    font-family: Arial;
+    font-size: 12pt;
+	font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: solid 2px #2170cd;
+    border-radius: 4px 4px 0px 0px;
+    background-color: #2170cd !important;
+	background: -webkit-linear-gradient(top, #358eea 0%,#2170cd 100%) !important;
+}
+
+#feedbackModule .feedback ul li a {
+    float: left;
+    text-decoration: none;
+    position: relative;
+}
+
+#feedbackModule .feedback ul li a:focus {
+    /*border: none !important;*/
+}
+
+#feedbackModule .feedback ul li {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#feedbackModule .feedback ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: block;
+}
+
+#feedbackModule #feedbackWindow {
+    display: none;
+    z-index: 10009;
+    width: 350px;
+    right: 105px;
+    bottom: 44px;
+    position: fixed;
+    border-radius: 4px 4px 0px 0px;
+    background-color: white !important;
+    border: solid 1px silver;
+    padding: 10px;
+    color: #333 !important;
+}
+
+#feedbackModule #feedbackWindow .dnnLabel {
+    width: 5%;
+}
+
+#feedbackModule #feedbackWindow div {
+    color: #333 !important;
+    background-color: white !important;
+}
+
+#feedbackModule #feedbackWindow .dnnFormItem input[type="text"], 
+#feedbackModule #feedbackWindow .dnnFormItem input[type="password"], 
+#feedbackModule #feedbackWindow .dnnFormItem input[type="email"], 
+#feedbackModule #feedbackWindow .dnnFormItem input[type="tel"], 
+#feedbackModule #feedbackWindow .dnnFormItem select, 
+#feedbackModule #feedbackWindow .dnnFormItem textarea {
+    width: 79%;
+    max-width: 445px;
+}
