@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Gafware.Modules.Feedback {
-    
-    
-    public partial class View {
-        
+namespace Gafware.Modules.Feedback
+{
+
+
+    public partial class View
+    {
+
         /// <summary>
         /// UpdatePanel1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
-        
+
         /// <summary>
         /// IsValid control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField IsValid;
-        
+
         /// <summary>
         /// lblName control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl lblName;
-        
+
         /// <summary>
         /// txtName control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtName;
-        
+
         /// <summary>
         /// rfvName control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvName;
-        
+
         /// <summary>
         /// lblEmail control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl lblEmail;
-        
+
         /// <summary>
         /// txtEmail control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
-        
+
         /// <summary>
         /// rfvEmail control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
-        
+
         /// <summary>
         /// revEmail control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revEmail;
-        
+
         /// <summary>
         /// lblPage control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl lblPage;
-        
+
         /// <summary>
         /// lblTitle control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTitle;
-        
+
         /// <summary>
         /// lblBody control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl lblBody;
-        
+
         /// <summary>
         /// txtBody control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBody;
-        
+
         /// <summary>
         /// rfvBody control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvBody;
-        
+
         /// <summary>
         /// Recaptcha1 control.
         /// </summary>
@@ -145,8 +147,8 @@ namespace Gafware.Modules.Feedback {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Gafware.Recaptcha.Web.UI.Controls.GoogleReCaptcha Recaptcha1;
-        
+        protected global::Gafware.Modules.Feedback.Recaptcha.Web.UI.Controls.GoogleReCaptcha Recaptcha1;
+
         /// <summary>
         /// rfvRecaptcha control.
         /// </summary>
@@ -155,7 +157,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CustomValidator rfvRecaptcha;
-        
+
         /// <summary>
         /// cvRecaptcha control.
         /// </summary>
@@ -164,7 +166,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CustomValidator cvRecaptcha;
-        
+
         /// <summary>
         /// lblSend control.
         /// </summary>
@@ -173,7 +175,7 @@ namespace Gafware.Modules.Feedback {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl lblSend;
-        
+
         /// <summary>
         /// btnSend control.
         /// </summary>

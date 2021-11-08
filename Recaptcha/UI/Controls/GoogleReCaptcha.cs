@@ -8,7 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.Script.Serialization;
 
-namespace Gafware.Recaptcha.Web.UI.Controls
+namespace Gafware.Modules.Feedback.Recaptcha.Web.UI.Controls
 {
     public class GoogleVerificationResponseOutput
     {

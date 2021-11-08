@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gafware.Recaptcha.Web
+namespace Gafware.Modules.Feedback.Recaptcha.Web
 {
     internal class RecaptchaKeyHelper
     {

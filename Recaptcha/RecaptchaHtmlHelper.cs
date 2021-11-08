@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace Gafware.Recaptcha.Web
+namespace Gafware.Modules.Feedback.Recaptcha.Web
 {
     /// <summary>
     /// Represents the functionality to generate recaptcha HTML.

@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="View.ascx.cs" Inherits="Gafware.Modules.Feedback.View" %>
 <%@ Register TagName="label" TagPrefix="dnn" Src="~/controls/labelcontrol.ascx" %>
-<%@ Register TagPrefix="cc1" Namespace="Gafware.Recaptcha.Web.UI.Controls" Assembly="Gafware.Feedback" %>
+<%@ Register TagPrefix="cc1" Namespace="Gafware.Modules.Feedback.Recaptcha.Web.UI.Controls" Assembly="Gafware.Feedback" %>
 <div id="feedbackModule">
     <div class="feedback">
         <ul>
@@ -40,7 +40,7 @@
                     <div>
                         <div style="text-align: center; width: 302px; margin: 0 auto 0 auto;"><cc1:GoogleReCaptcha ID="Recaptcha1"  runat="server" /></div>
                         <br style="clear: both;" />
-                        <div style="text-align: center; width: 100%;"><asp:CustomValidator ID="rfvRecaptcha" runat="server" Display="Dynamic" CssClass="dnnFormMessage dnnFormError" ValidationGroup="ContactForm" ClientValidationFunction="validateRecaptchaLength" Enabled="false" /></div>
+                        <div style="text-align: center; width: 100%;"><asp:CustomValidator ID="rfvRecaptcha" runat="server" Display="Dynamic" CssClass="dnnFormMessage dnnFormError" ValidationGroup="ContactForm" ClientValidationFunction="validateFeedbackRecaptchaLength" Enabled="false" /></div>
                         <div style="text-align: center; width: 100%;"><asp:CustomValidator ID="cvRecaptcha" runat="server" Display="Dynamic" CssClass="dnnFormMessage dnnFormError" ValidationGroup="ContactForm" Enabled="false" /></div>
                         <br style="clear: both;" />
                     </div>
@@ -54,12 +54,12 @@
     </div>
 </div>
 <script type="text/javascript">
-    function validateRecaptchaLength(oSrc, args) {
+    function validateFeedbackRecaptchaLength(oSrc, args) {
         var text = $('#<%= Recaptcha1.ClientID %> #recaptcha_response_field').val();
         args.IsValid = (text.length > 0);
     }
 
-    function onLoadreCaptcha() {
+    function onLoadFeedbackreCaptcha() {
         try {
             $("#<%= Recaptcha1.ClientID %>_Ctrl").empty();
             grecaptcha.render('<%= Recaptcha1.ClientID %>_Ctrl', {
@@ -134,7 +134,7 @@
                             $('#btnFeedback').focus();
                         }
                         if (<%= EnableGooglereCaptcha.ToString().ToLower() %>) {
-                            setTimeout(onLoadreCaptcha, 1000);
+                            setTimeout(onLoadFeedbackreCaptcha, 1000);
                         }
                     }
                 } catch (err) { }

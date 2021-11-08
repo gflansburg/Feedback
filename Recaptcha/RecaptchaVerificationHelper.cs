@@ -12,7 +12,7 @@ using System.IO;
 using System.Threading.Tasks;
 
 
-namespace Gafware.Recaptcha.Web
+namespace Gafware.Modules.Feedback.Recaptcha.Web
 {
     /// <summary>
     /// Represents the functionality for verifying user's response to the recpatcha challenge.

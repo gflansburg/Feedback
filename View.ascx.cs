@@ -15,7 +15,7 @@ using System.Net.Mail;
 using DotNetNuke.Services.Exceptions;
 using DotNetNuke.Entities.Modules;
 using DotNetNuke.Entities.Modules.Actions;
-using Gafware.Recaptcha.Web;
+using Gafware.Modules.Feedback.Recaptcha.Web;
 using DotNetNuke.Abstractions;
 using Microsoft.Extensions.DependencyInjection;
 
