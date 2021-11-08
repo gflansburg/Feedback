@@ -65,8 +65,8 @@ namespace Gafware.Modules.Feedback
             }
             if (!Page.ClientScript.IsClientScriptBlockRegistered(c_jRecaptchaAjax) && EnableGooglereCaptcha)
             {
-                //Page.ClientScript.RegisterClientScriptBlock(this.GetType(), c_jRecaptchaAjax, String.Format(SCRIPT_TAG_INCLUDE_FORMAT, "http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"), false);
-                string scriptToRenderCaptcha = @"<script src=""https://www.google.com/recaptcha/api.js?onload=onLoadreCaptcha&render=explicit"" async defer></script>";
+                //Page.ClientScript.RegisterClientScriptBlock(this.GetType(), c_jRecaptchaAjax, String.Format(SCRIPT_TAG_INCLUDE_FORMAT, "https://www.google.com/recaptcha/api/js/recaptcha_ajax.js"), false);
+                string scriptToRenderCaptcha = @"<script src=""https://www.google.com/recaptcha/api.js?onload=onLoadFeedbackreCaptcha&render=explicit"" async defer></script>";
                 Page.ClientScript.RegisterClientScriptBlock(this.GetType(), c_jRecaptchaAjax, scriptToRenderCaptcha , false);
             }
             //Page.Header.Controls.Add(new System.Web.UI.LiteralControl(String.Format(CSS_TAG_INCLUDE_FORMAT, String.Concat(this.ControlPath, "Scripts/jquery.qtip.css"))));

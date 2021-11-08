@@ -133,9 +133,9 @@
                             }
                             $('#btnFeedback').focus();
                         }
-                        if (<%= EnableGooglereCaptcha.ToString().ToLower() %>) {
-                            setTimeout(onLoadFeedbackreCaptcha, 1000);
-                        }
+                    }
+                    if (<%= EnableGooglereCaptcha.ToString().ToLower() %>) {
+                        setTimeout(onLoadFeedbackreCaptcha, 1000);
                     }
                 } catch (err) { }
             });

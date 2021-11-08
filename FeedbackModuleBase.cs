@@ -139,11 +139,12 @@ namespace Gafware.Modules.Feedback
             }
         }
 
-        private string _emailAddress = "ohr@ou.edu";
+        private string _emailAddress;
         public string EmailAddress
         {
             get
             {
+                _emailAddress = string.Empty;
                 if (Settings.Contains("EmailAddress") && !string.IsNullOrEmpty(Settings["EmailAddress"].ToString()))
                 {
                     _emailAddress = Settings["EmailAddress"].ToString();
